@@ -1,4 +1,52 @@
 from random import*
+#6
+while True:
+    a=input("Введи имя: ")
+    if a.isalpha():
+        print(a)
+        break
+    else:
+        print("Введи корректно")
+print("Привет",a.capitalize())
+b=len(a)
+g=["a","e","i","o","u","y"]
+so=["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z"]
+k=0
+for i in a:
+    if i in g:
+        k+=1
+    else:
+       print("") 
+o=0
+
+for i in a:
+    if i in so:
+        o+=1
+    else:
+        print("")
+print("количество букв",b, "количество гласных букв",k, "количество согласных букв",o)
+
+
+print()
+#5
+a=['крот', 'белка', 'выхухоль']
+b=['a', 'aa', 'aaa', 'aaaa', 'aaaaa']
+c=['qweasdqweas', 'q', 'rteww', 'ewqqqqq']
+max_a = len(max(a, key = len))
+max_b = len(max(b, key = len))
+max_c = len(max(c, key = len))
+print(['_' * (max_a - len(x)) + x for x in a])
+print(['_' * (max_b - len(x)) + x for x in b])
+print(['_' * (max_c - len(x)) + x for x in c])
+
+
+
+print()
+#4 Сортировка
+a=[6,9,4,3,2,7,34,3]
+a.sort()
+print(a)
+
 
 
 #3   Бесконечные числа
